@@ -4357,12 +4357,12 @@ html body .portfolio-overlay-details h5{
   left: 50%;
   transform: translateX(-50%);
   min-width: 150px;
-  background: #222;
+  background: #f5f5f5;
   border: none;
   border-radius: 8px;
   padding: 5px 0;
   text-align: center;
-  box-shadow: 0 8px 20px rgba(0,0,0,0.25);
+  box-shadow: 0 8px 20px rgba(255, 9, 9, 0.911);
 
   /* انیمیشن باز شدن */
   opacity: 0;
@@ -4380,7 +4380,7 @@ html body .portfolio-overlay-details h5{
 }
 
 #header .dropdown-menu .dropdown-item:hover {
-  background: #333;
+  background: #d40b0b;
 }
 
 /* وقتی فعال شد (دسکتاپ) */
@@ -4389,7 +4389,6 @@ html body .portfolio-overlay-details h5{
   opacity: 1;
   visibility: visible;
 }
-
 /* برای موبایل (لمسی) */
 @media (max-width: 768px) {
   #header .dropdown-menu {
