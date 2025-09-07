@@ -4389,6 +4389,7 @@ html body .portfolio-overlay-details h5{
   opacity: 1;
   visibility: visible;
 }
+
 /* برای موبایل (لمسی) */
 @media (max-width: 768px) {
   #header .dropdown-menu {
