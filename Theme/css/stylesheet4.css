@@ -16,92 +16,82 @@ body {
   direction: rtl;
 }
 
-/*-------- Preloader --------*/
-.preloader {
+
+
+/* =========================
+   لودینگ اسکرین (حرفه‌ای رنگی)
+========================= */
+#loading-screen {
   position: fixed;
-  width: 100%;
-  height: 100%;
-  z-index: 999999999 !important;
-  background-color: #fff;
   top: 0;
   left: 0;
-  right: 0;
-  bottom: 0;
+  width: 100%;
+  height: 100%;
+  background: #000; /* پس‌زمینه مشکی */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  z-index: 9999;
+  color: #fff;
+  text-align: center;
+  overflow: hidden;
+  opacity: 1;
+  transition: opacity 0.6s ease;
 }
-.preloader .lds-ellipsis {
-  display: inline-block;
-  position: absolute;
-  width: 80px;
-  height: 80px;
-  margin-top: -40px;
-  margin-left: -40px;
-  top: 50%;
-  left: 50%;
+
+#loading-screen.hide {
+  opacity: 0;
+  visibility: hidden;
 }
-.preloader .lds-ellipsis div {
-  position: absolute;
-  top: 33px;
-  width: 13px;
-  height: 13px;
+
+#loading-video {
+  width: 220px;
+  height: auto;
+  margin-bottom: 25px;
+  animation: float 2.2s ease-in-out infinite;
+}
+
+@keyframes float {
+  0%, 100% { transform: translateY(0);}
+  50% { transform: translateY(-12px);}
+}
+
+/* کانتینر اسپینرها */
+.spinner-container {
+  display: flex;
+  gap: 20px;
+  margin-bottom: 25px;
+}
+
+/* اسپینر پایه */
+.spinner {
+  width: 35px;
+  height: 35px;
+  border: 4px solid transparent;
+  border-top-color: currentColor;
   border-radius: 50%;
-  background: #000;
-  animation-timing-function: cubic-bezier(0, 1, 1, 0);
-}
-.preloader .lds-ellipsis div:nth-child(1) {
-  left: 8px;
-  animation: lds-ellipsis1 0.6s infinite;
-}
-.preloader .lds-ellipsis div:nth-child(2) {
-  left: 8px;
-  animation: lds-ellipsis2 0.6s infinite;
-}
-.preloader .lds-ellipsis div:nth-child(3) {
-  left: 32px;
-  animation: lds-ellipsis2 0.6s infinite;
-}
-.preloader .lds-ellipsis div:nth-child(4) {
-  left: 56px;
-  animation: lds-ellipsis3 0.6s infinite;
+  animation: spin 1s linear infinite;
 }
 
-.preloader.preloader-dark {
-  background-color: #000;
+.spinner.red {
+  color: #ff0055;
+  box-shadow: 0 0 10px #ff0055, 0 0 20px #ff3366, 0 0 30px #ff6688;
 }
 
-.preloader.preloader-dark .lds-ellipsis div {
-  background-color: #fff;
+.spinner.blue {
+  color: #00d4ff;
+  box-shadow: 0 0 10px #00d4ff, 0 0 20px #33ddff, 0 0 30px #66e5ff;
 }
 
-@keyframes lds-ellipsis1 {
-  0% {
-    transform: scale(0);
-  }
-  100% {
-    transform: scale(1);
-  }
+.spinner.green {
+  color: #00ff88;
+  box-shadow: 0 0 10px #00ff88, 0 0 20px #33ffaa, 0 0 30px #66ffcc;
 }
-@keyframes lds-ellipsis3 {
-  0% {
-    transform: scale(1);
-  }
-  100% {
-    transform: scale(0);
-  }
-}
-@keyframes lds-ellipsis2 {
-  0% {
-    transform: translate(0, 0);
-  }
-  100% {
-    transform: translate(24px, 0);
-  }
-}
-/*--- Preloader Magnific Popup ----*/
-.mfp-container .preloader {
-  background: transparent;
-}
-.mfp-container .preloader .lds-ellipsis div {
-  background: #fff;
+
+@keyframes spin {
+  0% { transform: rotate(0deg);}
+  100% { transform: rotate(360deg);}
 }
 
 ::selection {
