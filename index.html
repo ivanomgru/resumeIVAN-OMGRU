@@ -402,15 +402,20 @@
   <a href="https://ivan-omgru.ir" target="_blank" data-lang="fa">سایت اصلی</a>
   <a href="https://ivan-omgru.ir" target="_blank" data-lang="ru" style="display:none;">моой сайт</a>
 </div>
-
-<div class="preloader">
-  <div class="lds-ellipsis">
-    <div></div>
-    <div></div>
-    <div></div>
-    <div></div>
-  </div>
-</div>
+    <!--لودینگ من -->
+    <div id="loading-screen">
+      <video autoplay muted loop playsinline id="loading-video">
+       <source src="media/back/*.mp4" type="video/mp4">
+       مرورگر شما از ویدیو پشتیبانی نمی‌کند.
+      </video>
+      <div class="spinner-container">
+        <div class="spinner red"></div>
+        <div class="spinner blue"></div>
+        <div class="spinner green"></div>
+      </div>
+      <p>در حال بارگذاری...</p>
+      <p>Загрузка...</p>
+    </div>
 <div id="main-wrapper"> 
   
   <!-- Header -->
@@ -1835,9 +1840,11 @@
 <!-- Custom Script --> 
 <script src="Theme/js/theme.js" defer></script>
 <script src="Theme/js/langugesvidio.js" defer></script>
+<script src="Theme/js/ivan2.js"></script> 
 </body>
 
 </html>
+
 
 
 
