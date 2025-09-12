@@ -1555,7 +1555,7 @@
            <!-- کنترل‌ها -->  
            <div class="video-controls" style="position:absolute; bottom:0; left:0; width:100%; background:rgba(0,0,0,0.6); display:flex; flex-direction:column; padding:0.5rem; box-sizing:border-box;">
              <!-- نوار پیشرفت -->
-             <input type="range" id="progressBar" min="0" max="100" value="0" style="width:100%; cursor:pointer;">
+             <input type="range" id="progressBar" min="0" max="100" value="0" style="width:100%; cursor:pointer;" aria-label="نوار پیشرفت">
 
              <div style="display:flex; justify-content:space-between; align-items:center; margin-top:0.3rem; flex-wrap:wrap; gap:0.5rem;">
                <!-- کنترل‌های سمت چپ -->
@@ -1799,7 +1799,7 @@
     <li class="pale-golden-rod" data-toggle="tooltip" title="طلایی کم رنگ" data-path="Theme/css/color-pale-golden-rod.css"></li>
     <li class="yellow" id="reset-color" data-toggle="tooltip" title="تنظیم مجدد زرد پیش فرض"></li>
   </ul>
-  <button class="btn switcher-toggle"><i class="fas fa-cog"></i></button>
+  <button class="btn switcher-toggle"aria-label="تغییر تم"><<i class="fas fa-cog"></i></button>
 </div>
 <!-- Styles Switcher End --> 
 <!-- JavaScript --> 
