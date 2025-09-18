@@ -1358,17 +1358,16 @@
        </div> <!-- /.row -->
      </div> <!-- /.container -->
    </section>
-   <section id="contact" class="section bg-primary position-relative overflow-hidden" dir="rtl" lang="fa">
-     <!-- ویدیو پس‌زمینه -->
-     <video autoplay muted loop playsinline class="position-absolute w-100 h-100"
-         style="object-fit:cover; top:0; left:0; z-index:0;">
-       <source src="Theme/video/1.mp4" type="video/mp4">
-       مرورگر شما از ویدیو پشتیبانی نمی‌کند.
-     </video>
+   <section id="contact" class="section bg-primary position-relative overflow-hidden" dir="rtl" lang="fa" data-scroll-index="6">
+     <!-- تصویر پس‌زمینه -->
+     <div class="position-absolute w-100 h-100" 
+       style="top:0; left:0; background: url('images/background/ivan.omgru.webp') center/cover no-repeat; z-index:0;">
+     </div>
 
-     <!-- لایه نیمه شفاف روی ویدیو -->
+     <!-- لایه نیمه شفاف روی تصویر -->
      <div class="position-absolute w-100 h-100"
-          style="top:0; left:0; background:rgba(0,0,0,0.7); z-index:1;"></div>
+       style="top:0; left:0; background:rgba(0,0,0,0.7); z-index:1;"></div>
+
 
      <!-- تمام محتوای روی ویدیو در یک لایه با z-index بالاتر -->
      <div class="position-relative" style="z-index:2;">
@@ -1566,13 +1565,6 @@
             <span data-lang="fa">«ممنون هستم از همراهی شما.»</span>
             <span data-lang="ru" style="display:none;">«Спасибо за вашу поддержку.»</span>
           </p>
-
-          <p class="footer-text text-success" style="color:#1be600;">
-            <!-- این خط قبلاً روسی داشت؛ حالا هر دو زبان کنار هم هستند -->
-            <span data-lang="fa" style="display:none;">«Спасибо за вашу поддержку.»</span>
-            <span data-lang="ru">«Спасибо за вашу поддержку.»</span>
-          </p>
-
           <p class="footer-text" style="color:#ffffff;">
             <span data-lang="fa">نویسنده:</span>
             <span data-lang="ru" style="display:none;">Автор:</span>
@@ -1586,7 +1578,16 @@
             <span data-lang="fa">تمامی اطلاعات در دسترس عموم قرار می‌گیرد — ابوالفضل شهاب (ivan.omgru)</span>
             <span data-lang="ru" style="display:none;">Вся информация доступна публично — Абульфазль Шахаб (ivan.omgru)</span>
           </p>
-
+                    <div class="col-md-3 col-sm-6 mb-3">
+                        <div class="contact-info">
+                          <h5 class="lang" data-fa="آدرس" data-ru="Адрес">آدرس</h5>
+                           <p class="lang" data-fa="ارتباط با من:" data-ru="Связь со мной:">ارتباط با من:</p>
+                           <a href="https://ivan-omgru.ir" class="lang" data-fa="سایت اصلی" data-ru="Официальный сайт">سایت اصلی</a>
+                           <a href="https://resume.ivan-omgru.ir" class="lang" data-fa="رزومه" data-ru="Резюме">رزومه</a> |
+                           <a href="https://insta.ivan-omgru.ir" class="lang" data-fa="اینستاگرام" data-ru="Инстаграм">اینستاگرام</a> |
+                           <a href="https://youtube.ivan-omgru.ir" class="lang" data-fa="یوتیوب" data-ru="YouTube">یوتیوب</a>
+                       </div>
+                    </div>
           <!-- شبکه‌ها با لوگوها -->
           <ul class="footer-logos">
             <li>
@@ -1676,6 +1677,7 @@
 </body>
 
 </html>
+
 
 
 
